@@ -10,7 +10,9 @@ pipeline {
                     }
                 
             }
-             steps {
+        }
+        stage('test'){
+            steps {
                 script{
                     gv.testGroovy();
                     }
@@ -19,3 +21,4 @@ pipeline {
         }
     }
 }
+
