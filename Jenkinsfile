@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 script{
-                    gv.buildGroovy();
+                    gv.buildGroovy()
                     }
                 
             }
@@ -14,7 +14,7 @@ pipeline {
         stage('test'){
             steps {
                 script{
-                    gv.testGroovy();
+                    gv.testGroovy()
                     }
                 
             }
